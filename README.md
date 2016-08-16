@@ -1,3 +1,6 @@
-# README #
+# Biffy Clyro Tour
+Biffy Clyro Tour est une application Android permettant de connaître toutes les dates du groupe Biffy Clyro.
 
-Application Android créer à partir du projet de Biffy
+L'application est disponible ici : https://play.google.com/store/apps/details?id=biffyclyro.com.tour
+
+![Biffy Clyro Tour icon](https://raw.githubusercontent.com/benoitdeguine/BiffyClyroTour/master/app/src/main/ic_launcher-web.png "Biffy Clyro Tour icon")
