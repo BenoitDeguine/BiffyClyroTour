@@ -1,5 +1,6 @@
 package benoitd.com.biffyclyrotour;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +8,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
@@ -78,6 +80,14 @@ public class AllTourDates extends AppCompatActivity {
                 mEvents.clear();
                 mEvents.addAll(events);
                 mAdapter.notifyDataSetChanged();
+                if (mEvents.size() == 0) {
+                    Context context = getApplicationContext();
+                    CharSequence text = "No gig ! :(";
+                    int duration = Toast.LENGTH_LONG;
+
+                    Toast toast = Toast.makeText(context, text, duration);
+                    toast.show();
+                }
             }
 
             @Override
