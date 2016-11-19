@@ -38,7 +38,7 @@ public class AllTourDates extends AppCompatActivity {
 
         // Ads
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-XXXX");
+        mInterstitialAd.setAdUnitId("ca-app-pub-4366233206286319/1046868049");
 
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
